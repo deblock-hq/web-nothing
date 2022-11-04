@@ -1,4 +1,4 @@
-import Logo from './assets/deblockLogo.png';
+import Logo from './assets/logo.svg';
 import './App.css';
 
 const App = () => {
@@ -6,7 +6,7 @@ const App = () => {
     <div className='App'>
       <div className='container'>
         <img src={Logo} atl='Logo Deblock' />
-        <p>Probably nothing...</p>
+        <p>PROBABLY NOTHING</p>
       </div>
     </div>
   )
