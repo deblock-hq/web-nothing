@@ -58,20 +58,8 @@
 .container p {
     overflow: hidden;
     white-space: nowrap;
-    width: 0;
     max-width: fit-content;
-    animation: typing 5s steps(50, end) forwards;
-    animation-delay: 1.5s;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+    animation: imgFadeIn 1.5s;
 }
 
 @media (max-width: 630px) {
