@@ -5,7 +5,9 @@ const App = () => {
   return (
     <div className='App'>
       <div className='container'>
-        <img src={Logo} atl='Logo Deblock' />
+        <div className='images-container'>
+          <img className='logo' src={Logo} atl='Logo Deblock' />
+        </div>
         <p>PROBABLY NOTHING</p>
       </div>
     </div>
