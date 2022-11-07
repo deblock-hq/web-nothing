@@ -1,9 +1,6 @@
 .App {
     height: 100%;
-    background: url(./assets/Vector.svg) no-repeat;
     background-color: #F6F5EF;
-    background-position-x: center;
-    background-position-y: 32%;
     overflow: hidden;
 }
 
@@ -17,4 +14,67 @@
     font-weight: 500;
     margin: auto;
     padding-top: 101px;
+
+    background: url(./assets/Vector.svg) no-repeat;
+    background-position-x: center;
+    background-position-y: 24%;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container img {
+    animation: imgFadeIn 2s;
+}
+
+@keyframes imgFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container p {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    max-width: fit-content;
+    animation: typing 5s steps(50, end) forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@media (max-width: 630px) {
+    .container {
+        background-size: contain;
+        gap: 6vh;
+    }
+
+    .container img {
+        max-width: 60%;
+    }
 }
