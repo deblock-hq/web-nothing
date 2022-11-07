@@ -1,8 +1,6 @@
 .App {
     height: 100%;
-    background: url(./assets/Vector.svg) no-repeat;
-    background-position-x: center;
-    background-position-y: 32%;
+    background-color: #F6F5EF;
     overflow: hidden;
 }
 
@@ -16,4 +14,18 @@
     font-weight: 500;
     margin: auto;
     padding-top: 101px;
+
+    background: url(./assets/Vector.svg) no-repeat;
+    background-position-x: center;
+    background-position-y: 24%;
+}
+
+@media (max-width: 630px) {
+    .container {
+        background-size: contain;
+    }
+
+    .container img {
+        max-width: 60%;
+    }
 }
