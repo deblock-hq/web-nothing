@@ -1,5 +1,5 @@
 import Logo from './assets/logo.svg';
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
@@ -8,7 +8,6 @@ const App = () => {
         <div className='images-container'>
           <img className='logo' src={Logo} atl='Logo Deblock' />
         </div>
-        <p>PROBABLY NOTHING</p>
       </div>
     </div>
   )
