@@ -34,7 +34,6 @@
 
 .container img {
     width: 330px;
-    min-width: 168px;
     padding: 80px 80px 144px 80px;
     z-index: 2;
     animation: imgFadeIn 2s;
