@@ -58,7 +58,7 @@
     max-width: fit-content;
     position: absolute;
     bottom: 1.5em;
-    animation: textFadeIn 3s;
+    animation: imgFadeIn 2s;
 }
 
 @keyframes imgFadeIn {
