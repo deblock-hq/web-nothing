@@ -1,30 +1,24 @@
-import { Suspense } from 'react';
-import Logo from './assets/logo.svg';
-import { useTranslation, Trans } from "react-i18next";
-import './App.css';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { BrowserRouter, Navigate, Route, Routes, useParams, useNavigate } from 'react-router-dom';
+import Home from './Home';
 
 const App = () => {
-  const { t, i18n } = useTranslation('translation');
+  const { i18n } = useTranslation();
+  let navigate = useNavigate();
+
+  let detectedLng = i18n.language.substring(0, 2);
+
+  if (detectedLng !== 'fr') detectedLng = 'en';
+
+  console.log(detectedLng);
 
   return (
-    <Suspense fallback="loading">
-      <div className='App'>
-        <h1>{t('title')}</h1>
-        <h1>
-          <Trans i18nKey='title'>
-            Probably nothing
-          </Trans>
-        </h1>
-        <button type='button' onClick={() => i18n.changeLanguage('en')}>EN</button>
-        <button type='button' onClick={() => i18n.changeLanguage('fr')}>FR</button>
-        <div className='container'>
-          <div className='images-container'>
-            <img className='logo' src={Logo} atl='Logo Deblock' />
-          </div>
-        </div>
-      </div>
-    </Suspense>
+    <Routes>
+      <Route path="/" element={<Navigate to={`/${detectedLng}`} />} exact />
+      <Route path="/:lng" element={<Home />} />
+    </Routes>
   )
-};
+}
 
 export default App;

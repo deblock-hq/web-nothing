@@ -6,9 +6,11 @@ import en_translation from "./locales/en/translation.json";
 import fr_translation from "./locales/fr/translation.json";
 
 const detectionOptions = {
-    order: ['path', 'cookie', 'navigator', 'localStorage', 'subdomain', 'queryString', 'htmlTag'],
+    order: ['path', 'navigator', 'cookie', 'localStorage', 'subdomain', 'queryString', 'htmlTag'],
     lookupFromPathIndex: 0
 }
+
+export const languagesAvailable = ["en", "fr"];
 
 i18n
     .use(Backend)
@@ -18,7 +20,8 @@ i18n
         fallbackLng: 'en',
         debug: true,
         detection: detectionOptions,
-
+        whitelist: languagesAvailable,
+        checkWhitelist: true,
         interpolation: {
             escapeValue: false
         },
