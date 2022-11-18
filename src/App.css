@@ -52,7 +52,7 @@
 }
 
 .images-container::after {
-    content: 'Probably nothing';
+    content: 'probably nothing';
     /* overflow: hidden; */
     white-space: nowrap;
     max-width: fit-content;
