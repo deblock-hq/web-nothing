@@ -51,13 +51,12 @@
     animation: fadeIn 1.5s;
 }
 
-.images-container::after {
-    content: 'probably nothing';
-    /* overflow: hidden; */
+.images-container>span {
     white-space: nowrap;
     max-width: fit-content;
     position: absolute;
     bottom: 1.5em;
+    z-index: 3;
     animation: imgFadeIn 2s;
 }
 

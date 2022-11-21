@@ -7,6 +7,7 @@ const App = () => {
       <div className='container'>
         <div className='images-container'>
           <img className='logo' src={Logo} atl='Logo Deblock' />
+          <span>probably nothing</span>
         </div>
       </div>
     </div>
