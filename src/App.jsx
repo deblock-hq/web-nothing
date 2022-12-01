@@ -1,24 +1,27 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { BrowserRouter, Navigate, Route, Routes, useParams, useNavigate } from 'react-router-dom';
-import Home from './Home';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Route, Routes, useParams } from "react-router-dom";
+import LandingPageFr from "./components/fr/LandingPage/index";
+import LandingPageEn from "./components/en/LandingPage/index";
 
 const App = () => {
   const { i18n } = useTranslation();
-  let navigate = useNavigate();
+  const { lng } = useParams();
 
-  let detectedLng = i18n.language.substring(0, 2);
+  // let detectedLng = i18n.language.substring(0, 2);
 
-  if (detectedLng !== 'fr') detectedLng = 'en';
+  // if (detectedLng !== "fr") detectedLng = "en";
 
-  console.log(detectedLng);
+  // console.log("i18n", i18n);
 
   return (
     <Routes>
-      <Route path="/" element={<Navigate to={`/${detectedLng}`} />} exact />
-      <Route path="/:lng" element={<Home />} />
+      {/* {test()} */}
+      {/* <Route path="/" element={<Navigate to={`/${detectedLng}`} />} exact /> */}
+      <Route path="/" element={<LandingPageEn />} exact />
+      <Route path="/FR-:lng" element={<LandingPageFr />} caseSensitive />
     </Routes>
-  )
-}
+  );
+};
 
 export default App;

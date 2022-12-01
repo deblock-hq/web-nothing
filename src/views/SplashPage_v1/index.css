@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-.container {
+.App .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
     margin: auto;
 }
 
-.images-container {
+.App .images-container {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -32,14 +32,14 @@
     }
 }
 
-.container img {
+.App .container img {
     width: 330px;
     padding: 80px 80px 144px 80px;
     z-index: 2;
     animation: imgFadeIn 2s;
 }
 
-.images-container::before {
+.App .images-container::before {
     content: '';
     width: 100%;
     max-width: 489px;
@@ -51,7 +51,7 @@
     animation: fadeIn 1.5s;
 }
 
-.images-container::after {
+.App .images-container::after {
     content: 'PROBABLY NOTHING';
     overflow: hidden;
     white-space: nowrap;
