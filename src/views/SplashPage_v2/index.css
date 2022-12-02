@@ -74,28 +74,10 @@
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 60px;
-  font-size: 0.6em;
   padding: 10px 25px;
   position: absolute;
+  font-size: min(8vw, 0.6em);
 }
-
-/* .capsule-left {
-  left: 13em;
-  bottom: 11em;
-  width: 146px;
-}
-
-.capsule-top {
-  top: 5.8em;
-  width: 289px;
-  right: 16em;
-}
-
-.capsule-right {
-  right: 10em;
-  bottom: 9.5em;
-  width: 195px;
-} */
 
 @keyframes imgFadeIn {
   0% {
@@ -127,30 +109,56 @@
 
 .Grid {
   display: grid;
-  width: 100%;
+  width: 30em;
   height: 100%;
-  position: absolute;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
 }
 
 .capsule-left {
-  grid-column-start: 4;
+  grid-column-start: 3;
   max-width: 215px;
   top: 15em;
-  left: 1em;
+  left: 2em;
 }
 
 .capsule-top {
   grid-column-start: 5;
   max-width: 289px;
   top: 6em;
-  left: 4em;
+  left: 2em;
 }
 
 .capsule-right {
   grid-column-start: 7;
   max-width: 195px;
   top: 17em;
-  left: 4em;
+  right: 10em;
+}
+
+@media screen and (max-width: 750px) {
+  .Grid {
+    width: 30em;
+  }
+  /* 
+  .capsule-left {
+    grid-column-start: 0;
+    max-width: 215px;
+    top: 15em;
+    left: 0em;
+  }
+
+  .capsule-top {
+    grid-column-start: 4;
+    max-width: 289px;
+    top: 6em;
+    left: 0em;
+  }
+
+  .capsule-right {
+    grid-column-start: 0;
+    max-width: 195px;
+    top: 17em;
+    right: 0em;
+  } */
 }
