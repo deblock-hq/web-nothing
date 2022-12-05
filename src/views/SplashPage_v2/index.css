@@ -84,6 +84,7 @@
   white-space: nowrap;
   z-index: 3;
   gap: 1em;
+  animation: imgFadeIn 2.5s;
 }
 
 .cross-icon {
