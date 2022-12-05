@@ -2,7 +2,7 @@ import { Suspense, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, useNavigate } from "react-router-dom";
 import { otherLanguagesAvailable } from "../../../i18n";
-import SplashPage_v1 from "../../../views/SplashPage_v1";
+import SplashPage_v2 from "../../../views/SplashPage_v2";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -19,7 +19,11 @@ const Home = () => {
 
   return (
     <Suspense fallback="loading">
-      <SplashPage_v1 title={t("title")} />
+      <SplashPage_v2
+        h1="deblock"
+        h2={t("non-custodial-wallet")}
+        span={t("coming-soon")}
+      />
     </Suspense>
   );
 };

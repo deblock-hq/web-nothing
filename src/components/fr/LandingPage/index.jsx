@@ -1,7 +1,6 @@
 import { Suspense, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, useNavigate } from "react-router-dom";
-import SplashPage_v1 from "../../../views/SplashPage_v1";
 import SplashPage_v2 from "../../../views/SplashPage_v2";
 
 const languageTranslated = ["fr", "en"];
