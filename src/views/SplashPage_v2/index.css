@@ -79,7 +79,7 @@
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 60px;
-  padding: 8px 16px;
+  padding:0.6em 0.5em 0.6em 1em;
   font-size: min(3.3vw, 0.6em);
   white-space: nowrap;
   z-index: 3;
@@ -143,15 +143,11 @@
   grid-column-end: 20;
 }
 
-.capsule-right img {
+.capsules img {
   width: min(3vw, 1em);
 }
 
 @media screen and (max-width: 475px) {
-  .capsules {
-    width: fit-content;
-  }
-
   .capsule-left {
     grid-row-start: 10;
   }

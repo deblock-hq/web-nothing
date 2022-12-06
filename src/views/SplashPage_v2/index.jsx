@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/logo.svg";
 import Splash from "../../assets/Vector.svg";
 import Arrow from "../../assets/arrow-right-circle.svg";
+import Cross from "../../assets/cross.svg";
 
 import "./index.css";
 
@@ -15,11 +16,11 @@ const SplashPage_v2 = ({ h1, h2, span }) => {
           <span className="probably-nothing">probably nothing</span>
           <div className="capsules capsule-left">
             <h1>{h1}</h1>
-            <span className="cross-icon">+</span>
+            <img src={Cross} atl="Cross" />
           </div>
           <div className="capsules capsule-top">
             <h2>{h2}</h2>
-            <span className="cross-icon">+</span>
+            <img src={Cross} atl="Cross" />
           </div>
           <div className="capsules capsule-right">
             <span>{span}</span>

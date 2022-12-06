@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!languageTranslated.includes(lng)) {
-      navigate("/FR-fr");
+      navigate("/fr-FR");
     }
 
     i18n.changeLanguage(lng);
