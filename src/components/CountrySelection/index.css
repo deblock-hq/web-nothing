@@ -18,13 +18,15 @@
 .CountrySelection-container .titles {
   font-size: min(8vw, 51px);
   text-align: center;
+  font-weight: 400;
+  padding-top: 1em;
 }
 
 .country-container {
   flex-direction: column;
   text-align: center;
   gap: 2em;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
 }
 
 .country-container .continent {
