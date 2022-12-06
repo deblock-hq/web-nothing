@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.svg";
 import Splash from "../../assets/Vector.svg";
-import Arrow from  "../../assets/arrow-right-circle.svg";
+import Arrow from "../../assets/arrow-right-circle.svg";
 
 import "./index.css";
 
@@ -27,7 +27,6 @@ const SplashPage_v2 = ({ h1, h2, span }) => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
