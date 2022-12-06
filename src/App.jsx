@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import LandingPageFr from "./components/fr/LandingPage/index";
 import LandingPageEn from "./components/en/LandingPage/index";
 import CountrySelection from "./components/CountrySelection";
@@ -14,7 +14,7 @@ const App = () => {
         element={<CountrySelection />}
         caseSensitive
       />
-      <Route path="/en-GB" element={<LandingPageEn />} caseSensitive exact />
+      <Route path="/en-GB" element={<Navigate to="/" />} />
     </Routes>
   );
 };
