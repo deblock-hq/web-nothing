@@ -14,6 +14,7 @@ const App = () => {
         element={<CountrySelection />}
         caseSensitive
       />
+      <Route path="/en-GB" element={<LandingPageEn />} caseSensitive exact />
     </Routes>
   );
 };
