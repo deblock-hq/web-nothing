@@ -14,6 +14,7 @@ const Home = () => {
     if (!languageTranslated.includes(lng)) {
       navigate("/fr-FR");
     }
+    // if()
 
     i18n.changeLanguage(lng);
   }, []);

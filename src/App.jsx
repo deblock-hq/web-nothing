@@ -8,12 +8,8 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPageEn />} exact />
-      <Route path="/:lng-FR" element={<LandingPageFr />} caseSensitive />
-      <Route
-        path="/choose-your-country"
-        element={<CountrySelection />}
-        caseSensitive
-      />
+      <Route path="/:lng-FR" element={<LandingPageFr />} />
+      <Route path="/choose-your-country" element={<CountrySelection />} />
       <Route path="/en-GB" element={<Navigate to="/" />} />
     </Routes>
   );

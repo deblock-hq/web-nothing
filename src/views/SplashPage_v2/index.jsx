@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/deflogo.svg";
 import Splash from "../../assets/Vector.svg";
 import Arrow from "../../assets/arrow-right-circle.svg";
 import Cross from "../../assets/cross.svg";
