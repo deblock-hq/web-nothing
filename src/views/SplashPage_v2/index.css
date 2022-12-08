@@ -39,6 +39,7 @@
 
 .logo {
   width: 67%;
+  max-width: 700px;
   height: 87%;
   z-index: 2;
   animation: imgFadeIn 2s;
@@ -175,6 +176,7 @@
 
   .capsule-right {
     grid-row-start: 11;
-    grid-column-start: 18;
+    grid-column-start: 15;
+    grid-column-end: 23;
   }
 }
