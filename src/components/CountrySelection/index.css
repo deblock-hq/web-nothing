@@ -1,5 +1,7 @@
 .CountrySelection {
   height: 100%;
+  background-color: #fbfaf9;
+  position: relative;
 }
 
 .CountrySelection-container,
@@ -10,7 +12,7 @@
 
 .CountrySelection-container {
   flex-direction: column;
-  gap: 5em;
+  gap: 2em;
   background: #f8f8f8;
   min-height: 100vh;
 }
@@ -20,20 +22,43 @@
   text-align: center;
   font-weight: 400;
   padding-top: 1em;
+  z-index: 2;
 }
 
 .country-container {
   flex-direction: column;
   text-align: center;
-  gap: 2em;
+  align-items: center;
+  gap: 4em;
   padding: 0 2em 2em 2em;
+  z-index: 2;
 }
 
-.country-container .continent {
-  font-size: 51px;
+.choose-country {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-width: 450px;
+  width: 100%;
 }
 
-.country-container ul {
+.choose-country > span {
+  font-size: min(8vw, 38px);
+}
+
+.choose-country > img {
+  width: 250px;
+  align-self: flex-end;
+}
+
+/* .choose-country::after {
+  content: url(../../assets/Trace.svg);
+  position: absolute;
+  left: -3px;
+  top: 10px;
+} */
+
+/* .country-container ul {
   display: grid;
   -webkit-box-align: center;
   align-items: center;
@@ -43,19 +68,33 @@
   padding: 1.5rem 2rem;
   background: #ffffff;
   border-radius: 30px;
-  /* width: 60%; */
   align-self: center;
+} */
+
+.country-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 16px 12px;
+  background: #ffffff;
+  border-radius: 30px;
+  align-self: center;
+  max-width: 350px;
+  width: 100%;
+  min-width: fit-content;
 }
 
 .country-container li {
-  flex: 1 0 21%;
-  align-items: center;
+  /* flex: 1 0 21%; */
+  /* align-items: center; */
+  justify-content: space-between;
   gap: 32px;
   white-space: nowrap;
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   border: 1px solid transparent;
   border-radius: 12px;
   transition: all 0.15s ease 0s;
+  cursor: pointer;
 }
 
 .country-container li:hover {
@@ -64,15 +103,44 @@
   box-shadow: 3px 4px 0px -1px #000000;
 }
 
+.country-container li > div {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
 .flag {
   width: 38px;
   height: 38px;
   min-width: 38px;
   background-color: #d9d9d9;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 1024px) {
+.arrow {
+  opacity: 0;
+}
+
+.country-container li:hover .arrow {
+  opacity: 1;
+}
+
+
+.country-blob-left {
+  max-width: 500px;
+  min-width: 370px;
+  top: -255px;
+  left: -200px;
+}
+
+.country-blob-right {
+  max-width: 700px;
+  min-width: 550px;
+  bottom: 400px;
+  right: -400px;
+}
+
+/* @media screen and (max-width: 1024px) {
   .country-container ul {
     grid-template-columns: repeat(3, minmax(0px, 1fr));
   }
@@ -88,4 +156,4 @@
   .country-container ul {
     grid-template-columns: repeat(1, minmax(0px, 1fr));
   }
-}
+} */
