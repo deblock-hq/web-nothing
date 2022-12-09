@@ -27,28 +27,11 @@ const SplashPage_v2 = ({ h1, h2, span }) => {
             <span>{span}</span>
             <img src={Arrow} atl="Arrow right" />
           </div>
+          <Blob className="blob-left" color="#E6E1EA" />
+          <Blob className="blob-top" color="#F9D4BF" />
+          <Blob className="blob-right" color="#F4E9D2" />
         </div>
-        <div>
-          <Blob className="blob-2" color="#D5CAF7" />
-          <Blob className="blob-1" color="#C5CAF7" />
-          <Blob className="blob-3" color="#E5CAF7" />
-          <Blob className="blob-4" color="#F5CAF7" />
-          <Blob className="blob-5" color="#G5CAF7" />
-          <Blob className="blob-6" color="#H5CAF7" />
-          <Blob className="blob-7" color="#I5CAF7" />
-          <Blob className="blob-8" color="#J5CAF7" />
-          <Blob className="blob-9" color="#K5CAF7" />
-          <Blob className="blob-10" color="#L5CAF7" />
-          <Blob className="blob-11" color="#M5CAF7" />
-          <Blob className="blob-12" color="#N5CAF7" />
-          <Blob className="blob-13" color="#O5CAF7" />
-          <Blob className="blob-14" color="#P5CAF7" />
-          <Blob className="blob-15" color="#Q5CAF7" />
-          <Blob className="blob-16" color="#R5CAF7" />
-          <Blob className="blob-17" color="#S5CAF7" />
-          <Blob className="blob-18" color="#T5CAF7" />
-          <Blob className="blob-19" color="#U5CAF7" />
-        </div>
+        <div></div>
       </div>
     </div>
   );

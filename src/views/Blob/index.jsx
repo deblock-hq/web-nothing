@@ -9,7 +9,8 @@ const Blob = ({ className, color }) => {
   let path;
 
   useEffect(() => {
-    path = document.querySelector("path");
+    // path = document.querySelector("path");
+    path = ref.current;
     console.log("UseEffect", ref);
     console.log(path);
     const points = createPoints();
