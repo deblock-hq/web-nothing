@@ -7,6 +7,7 @@ import Arrow from "../../assets/arrow.svg";
 import Blob from "../../views/Blob";
 import Trace from "../../assets/Trace.svg";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const CountrySlection = () => {
   const { t } = useTranslation("translation");
@@ -22,20 +23,28 @@ const CountrySlection = () => {
             <img src={Trace} alt="Trace" />
           </span>
           <ul>
-            <li>
-              <div>
-                <img className="flag" src={UkFlag} alt="United Kingdom flag" />
-                <span>United Kingdom</span>
-              </div>
-              <img className="arrow" src={Arrow} alt="Arrow" />
-            </li>
-            <li>
-              <div>
-                <img className="flag" src={FrFlag} alt="France flag" />
-                <span>France</span>
-              </div>
-              <img className="arrow" src={Arrow} alt="Arrow" />
-            </li>
+            <Link to="/">
+              <li>
+                <div>
+                  <img
+                    className="flag"
+                    src={UkFlag}
+                    alt="United Kingdom flag"
+                  />
+                  <span>United Kingdom</span>
+                </div>
+                <img className="arrow" src={Arrow} alt="Arrow" />
+              </li>
+            </Link>
+            <Link to="/fr-FR">
+              <li>
+                <div>
+                  <img className="flag" src={FrFlag} alt="France flag" />
+                  <span>France</span>
+                </div>
+                <img className="arrow" src={Arrow} alt="Arrow" />
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
