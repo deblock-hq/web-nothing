@@ -47,14 +47,14 @@
   max-width: 700px;
   height: 87%;
   z-index: 3;
-  animation: imgFadeIn 2s;
+  animation: fadeIn 1.5s;
   grid-row-start: 5;
   grid-row-end: 16;
   grid-column-start: 4;
   grid-column-end: 22;
 }
 
-.splash {
+/* .splash {
   width: 100%;
   max-width: 489px;
   height: 100%;
@@ -64,7 +64,7 @@
   grid-row-end: 16;
   grid-column-start: 4;
   grid-column-end: 22;
-}
+} */
 
 .probably-nothing {
   white-space: nowrap;
