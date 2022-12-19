@@ -1,3 +1,17 @@
-{
+{ 
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "FR"
+        }
+      ],
+      "destination": "/fr",
+      "permanent": false
+    }
+  ],
   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
