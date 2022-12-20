@@ -4,12 +4,23 @@ import Splash from "../../assets/Vector.svg";
 import Arrow from "../../assets/arrow-right-circle.svg";
 import Cross from "../../assets/cross.svg";
 
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
+
 import "./index.css";
 import Blob from "../Blob";
 
 const SplashPage_v2 = ({ h1, h2, span }) => {
   return (
     <div className="SplashPage">
+      <Player
+        src="https://assets1.lottiefiles.com/packages/lf20_myejiggj.json"
+        className="player"
+        loop
+        autoplay
+        style={{ height: '300px', width: '300px' }}
+      />
+        <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
+
       <div className="container">
         <div className="images-container">
           {/* <img className="splash" src={Splash} atl="Background splash" /> */}
